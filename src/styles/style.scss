@@ -1,0 +1,35 @@
+/*Abstracts imports*/
+@import './abstracts/_mixins.scss';
+@import './abstracts/_variables.scss';
+@import './abstracts/_fonts.scss';
+
+/*Layout imports*/
+@import './layout/_landing-page-layout.scss';
+@import './layout/_flex.scss';
+@import './layout/_grid.scss';
+
+/*Base imports*/
+@import './base/_reset.scss';
+
+/*Components imports*/
+@import './components/_card.scss';
+@import './components/_form.scss';
+@import './components/_slider.scss';
+@import './components/_collapsible-list.scss';
+@import './components/_icon.scss';
+@import './components/_submenu.scss';
+@import './components/_producto.scss';
+@import './components/_map.scss';
+@import './components/_categorias.scss';
+@import './components/_filter.scss';
+@import './components/_dropcart.scss';
+@import './components/_menu.scss';
+@import './components/_messenger.scss';
+@import './components/_modal.scss';
+@import './components/_footer.scss';
+@import './components/_favoritos.scss';
+@import './components/_login.scss';
+@import './components/_dropdown.scss';
+@import './components/_buttons.scss';
+@import './components/_avatar.scss';
+@import './components/_about.scss';

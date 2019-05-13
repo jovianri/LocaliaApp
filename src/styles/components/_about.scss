@@ -1,0 +1,37 @@
+.about{
+}
+
+.about__title{
+    margin: 0rem 5rem;
+}
+
+.about__content{
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 50%;
+    font-size: 23px;
+}
+
+.about__image{
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 2rem;
+}
+
+.about__footer{
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 2rem;
+}
+
+.about__sponsors{
+    margin-top: 2rem;
+    font-size: 23px;
+}
+
+.about__logos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 70%;
+}

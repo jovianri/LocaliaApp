@@ -1,0 +1,145 @@
+.menu{
+    @include flex("horizontal");
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    &__item{
+        font-size: $size-m;
+        flex-basis: auto;
+        padding: 10px 30px 30px 0px;
+    }
+    &__item:hover{
+        cursor: pointer;
+    }
+}
+
+.menu__search{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    padding: 15px;
+    width: 30%;
+}
+
+.menu__item{
+    font-size: $size-l;
+}
+
+.menu__item--content{
+    display: none;
+}
+
+.menu__item--default{
+    margin-right: auto;
+    flex-grow: 1;
+}
+
+.menu__item--logo{
+    margin: 1rem;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.menu__item--collapse{
+    display: none;
+    overflow: hidden;
+}
+
+
+
+.submenu-danger{
+    @include flex("horizontal");
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.submenu-danger__item{
+    flex-basis: auto;
+    padding: 30px;
+}
+
+.submenu-danger__item:hover{
+    cursor: pointer;
+}
+
+
+
+@media all and (max-width: 890px) {
+    .menu {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .menu__item--default{
+        text-align: center;
+        margin: auto;
+    }
+
+    .menu__item--content{
+        display: block;
+    }
+
+    .submenu-danger{
+        flex-direction: column;
+    }
+
+    .menu__item--animation-entrada{
+        padding: 0;
+        animation-name: dropDown;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+    .menu__item--animation-salida{
+        padding: 0;
+        animation-name: dropUp;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+    .menu__item--layout{
+        display: none;
+        overflow: hidden;
+    }
+
+    
+    .menu__item--collapse{
+        display: block;
+    }
+
+    .filter{
+        display:none;
+    }
+
+    .categorias{
+        display: none;
+    }
+}
+
+@media all and (min-width: 890px) {
+    .submenu-danger{
+        flex-direction: row;
+    }
+
+}
+
+
+
+@keyframes dropDown{
+    from{height: 0}
+    to{height: 250px}
+}
+
+@keyframes dropUp{
+    from{height: 250px}
+    to{height: 0;visibility: hidden}
+}
+
+
+
+

@@ -1,0 +1,26 @@
+@media all and (max-width: 900px) {
+    .map{
+        display: none;
+    }
+
+    .flex__item--mapa{
+        display: none;
+    }
+
+    .flex__item--locales{
+        width: 100%;
+    }
+
+    .list__item{
+        width: 100%;
+    }
+
+}
+
+.map{
+    border-radius: 5px;
+}
+
+.flex__item--mapa{
+    padding: 1rem;
+}
